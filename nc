@@ -1,13 +1,5 @@
-nc -v google.com 80
-Connection to google.com 80 port [tcp/http] succeeded!
+# usei o numero do DNS pois no meu pc não funcionou com o nome endereçado
+# o endereço DNS é da google.
+nc -v 173.194.118.37 80
 GET index.html HTTP/1.1
 
-HTTP/1.1 302 Found
-Location: http://www.google.com/
-Cache-Control: private
-Content-Type: text/html; charset=UTF-8
-X-Content-Type-Options: nosniff
-Date: Sat, 18 Aug 2012 06:03:04 GMT
-Server: sffe
-Content-Length: 219
-X-XSS-Protection: 1; mode=block
